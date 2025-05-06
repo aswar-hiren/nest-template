@@ -21,7 +21,7 @@ export class AuthService {
 
     const isMatch = await bcrypt.compare(pass, user.password);
     if (!isMatch) {
-      throw new UnauthorizedException('Invalid credentials');
+      throw new UnauthorizedException('Invalid the credentials');
     }
     
     // TODO: Generate a JWT and return it here
